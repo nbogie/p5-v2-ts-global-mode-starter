@@ -1,0 +1,6 @@
+[
+    {
+        "action": "remove",
+        "files": ["uncloned/template-creation-log.md"]
+    }
+]
