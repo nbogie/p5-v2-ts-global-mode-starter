@@ -16,18 +16,19 @@ export default defineConfig(({ mode }) => {
             minify: false,
 
             rollupOptions: {
-                input: {
-                    app: isProduction
-                        ? resolve(__dirname, "index.no-bundling.html")
-                        : resolve(__dirname, "index.html"),
-                },
+                // input: {
+                //     app: isProduction
+                //         ? resolve(__dirname, "index.no-bundling.html")
+                //         : resolve(__dirname, "index.html"),
+                // },
 
                 //externalize deps that shouldn't be bundled - e.g. p5
-                external: [],
+                external: ["p5"],
                 //https://rollupjs.org/configuration-options/
                 preserveEntrySignatures: "strict",
                 output: {
                     format: "es",
+
                     //if you don't want a consolidated single file output, enable preserveModules
                     // preserveModules: true,
 
