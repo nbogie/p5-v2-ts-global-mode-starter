@@ -1,6 +1,8 @@
 # Your project title
 
-## Install Instructions
+## Install Instructions - do this before coding
+
+You will see typescript errors about p5 functions until this step is done.
 
 ```bash
 npm i
