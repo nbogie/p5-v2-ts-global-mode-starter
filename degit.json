@@ -1,6 +1,6 @@
 [
     {
         "action": "remove",
-        "files": ["uncloned/template-creation-log.md"]
+        "files": ["uncloned", "LICENSE", ".github", "degit.json"]
     }
 ]
