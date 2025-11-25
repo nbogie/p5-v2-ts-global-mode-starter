@@ -4,3 +4,5 @@
 -   removed unnecessary vite vanilla stuff
 -   yarn add -D p5 #installed "^2.1.1"
 -   add degit.json to remove this log after cloning
+-   inline minimal css in index.html - not the focus
+-   main.ts: add enough sketch code to find config errors

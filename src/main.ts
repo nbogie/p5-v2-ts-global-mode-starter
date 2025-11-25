@@ -35,3 +35,7 @@ window.draw = function draw() {
 window.mousePressed = function mousePressed() {
     redraw();
 };
+
+window.windowResized = function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+};
