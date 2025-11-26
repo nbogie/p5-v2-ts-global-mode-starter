@@ -1,6 +1,12 @@
 [
     {
         "action": "remove",
-        "files": ["uncloned", "LICENSE", ".github", "degit.json"]
+        "files": [
+            "uncloned",
+            "src/unclonedCode",
+            "LICENSE",
+            ".github",
+            "degit.json"
+        ]
     }
 ]
