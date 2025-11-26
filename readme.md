@@ -36,12 +36,14 @@ npm run test
 
 ## About this project's template
 
-This project was set up by making a copy of this template: https://github.com/nbogie/p5-v2-ts-global-mode-template-WIP
+This project was set up by making a copy of this template: https://github.com/nbogie/p5-v2-ts-global-mode-starter
 
 ### Making another project like this one
 
 To make another project like this one, it is easiest to run
 
-`npx degit nbogie/p5-v2-ts-global-mode-template-WIP`
+`npx degit nbogie/p5-v2-ts-global-mode-starter`
 
 Alternatively, just download the template as a zip and delete any files listed in degit.json
+
+If you're using github, and want to create a new repo there, you can click on `use this template`
