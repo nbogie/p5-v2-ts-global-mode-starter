@@ -46,4 +46,4 @@ To make another project like this one, it is easiest to run
 
 Alternatively, just download the template as a zip and delete any files listed in degit.json
 
-If you're using github, and want to create a new repo there, you can click on `use this template`
+If you're using github, and want to create a new repo there, you can click on `use this template`.  [More detail, if needed, is here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
