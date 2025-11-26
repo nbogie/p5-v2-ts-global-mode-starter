@@ -19,7 +19,24 @@ window.setup = async function setup() {
 
 window.draw = function draw() {
     background(30);
-    for (let i = 0; i < 20; i++) {
+
+    //an example comment within a function
+    drawSomeCircles(12);
+};
+
+window.mousePressed = function mousePressed() {
+    redraw();
+};
+
+window.windowResized = function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+};
+
+/** draw a number of random-sized circles around the canvas
+ * @param numCircles - how many circles should be drawn
+ */
+function drawSomeCircles(numCircles: number) {
+    for (let i = 0; i < numCircles; i++) {
         const col: p5.Color = color("lime");
         fill(col);
         const offset = p5.Vector.fromAngle(
@@ -30,12 +47,4 @@ window.draw = function draw() {
 
         circle(pos.x, pos.y, 20);
     }
-};
-
-window.mousePressed = function mousePressed() {
-    redraw();
-};
-
-window.windowResized = function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-};
+}
