@@ -11,8 +11,6 @@ p5.disableFriendlyErrors = false;
 
 window.setup = async function setup() {
     createCanvas(windowWidth, windowHeight);
-    console.log("window.p5 is", window.p5);
-    //                                 ^?
     //just checking p5 variable is available (both to typescript and at runtime).
     console.log(p5.Vector.random2D());
 };
