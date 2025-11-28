@@ -1,7 +1,8 @@
-//TODO: move most test code to a separate workout script
+// eventually we'll only need this: import p5 from "p5/global";
 
 import "p5/global";
 import p5 from "p5";
+
 import { collect } from "./utils.ts";
 
 //just checking this ts setup can handle the p5 value.
