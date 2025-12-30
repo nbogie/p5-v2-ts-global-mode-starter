@@ -1,4 +1,4 @@
-# Your project title
+# p5 v2.x typescript project starter (global/instance mode)
 
 ## Install - do this before coding
 
