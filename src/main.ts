@@ -1,4 +1,3 @@
-//TODO: remove this import when building for OP
 //imports the types for global-mode p5.  AND side-effects to start p5 running (calls our setup() etc)
 import "p5/global";
 
