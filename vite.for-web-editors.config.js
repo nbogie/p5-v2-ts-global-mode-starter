@@ -1,5 +1,9 @@
 //@ts-check
 
+// Note: This file is ignored by the basic npm run build command.
+// It is only intended for building into a single file, for deployment to 
+// the p5 web editor, openprocessing, or similar.
+
 //WIP - not correct yet, regarding index.for-web-editors.html
 
 //reading:
