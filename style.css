@@ -1,0 +1,15 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+nav a {
+  background: linen;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+nav {
+  margin: 0.3rem;
+  text-align: center;
+}
