@@ -1,8 +1,8 @@
 # Your project title
 
-## Install Instructions - do this before coding
+## Install - do this before coding
 
-You will see typescript errors about p5 functions until this step is done.
+In the editor you will see typescript errors about p5 functions until this step is done:
 
 ```bash
 npm i
@@ -14,16 +14,28 @@ npm i
 npm run dev
 ```
 
+## Type-checking
+
+```bash
+npm run type-check
+```
+
+or if using vscode, in the editor use:
+ * `cmd-shift-b` (mac) or 
+ * `ctrl-shift-b` (windows) 
+ 
+ This will run the type-check across ALL project ts files and to populate vscode's problems window with any results.  This is configured in `.vscode/tasks.json`.
+
 ## Building
 
 ```bash
 npm run build
 ```
 
-## Building readable JS (single file)
+## Building readable JS (single file) - WIP
 
 ```bash
-npm run build:readable
+npm run build:for-web-editors
 ```
 
 ## optional: Running unit tests
