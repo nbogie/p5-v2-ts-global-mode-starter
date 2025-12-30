@@ -1,7 +1,7 @@
 //@ts-check
 
 // Note: This file is ignored by the basic npm run build command.
-// It is only intended for building into a single file, for deployment to 
+// It is only intended for building into a single file, for deployment to
 // the p5 web editor, openprocessing, or similar.
 
 //WIP - not correct yet, regarding index.for-web-editors.html
@@ -13,36 +13,36 @@
 import { defineConfig } from "vite";
 import { resolve } from "path"; // Need this to resolve the file path
 export default defineConfig((_opts) => {
-    return {
-        build: {
-            //more readable code for upload on openprocessing etc
-            minify: false,
-            //Turn off the inclusion of the module preload polyfill at the top of the code.
-            //Removal of this polyfill could result in potentially slower module loading times
-            // for multi-file setups.
-            // But it's much nicer for the user not to see this.
-            //See https://vite.dev/config/build-options#build-modulepreload
-            modulePreload: { polyfill: false },
+  return {
+    build: {
+      //more readable code for upload on openprocessing etc
+      minify: false,
+      //Turn off the inclusion of the module preload polyfill at the top of the code.
+      //Removal of this polyfill could result in potentially slower module loading times
+      // for multi-file setups.
+      // But it's much nicer for the user not to see this.
+      //See https://vite.dev/config/build-options#build-modulepreload
+      modulePreload: { polyfill: false },
 
-            //https://rollupjs.org/configuration-options/
-            rollupOptions: {
-                // input: {
-                //     app: resolve(__dirname, "index.for-web-editors.html"),
-                // },
+      //https://rollupjs.org/configuration-options/
+      rollupOptions: {
+        // input: {
+        //     app: resolve(__dirname, "index.for-web-editors.html"),
+        // },
 
-                //externalize deps that shouldn't be bundled - e.g. p5
-                external: ["p5"],
-                preserveEntrySignatures: "strict",
-                output: {
-                    format: "es",
+        //externalize deps that shouldn't be bundled - e.g. p5
+        external: ["p5"],
+        preserveEntrySignatures: "strict",
+        output: {
+          format: "es",
 
-                    //if you don't want a consolidated single file output, enable preserveModules
-                    // preserveModules: true,
+          //if you don't want a consolidated single file output, enable preserveModules
+          // preserveModules: true,
 
-                    // chunkFileNames: `[name].js`, //simplified names
-                    // entryFileNames: `[name].js`,
-                },
-            },
+          // chunkFileNames: `[name].js`, //simplified names
+          // entryFileNames: `[name].js`,
         },
-    };
+      },
+    },
+  };
 });

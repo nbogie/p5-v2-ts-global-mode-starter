@@ -1,6 +1,6 @@
 //this function is just here as an example for unit testing
 export function addTwoNumbers(a: number, b: number): number {
-    return a + b;
+  return a + b;
 }
 /**
  * Creates an array of numElements containing the collected results of calling the given function repeatedly.
@@ -13,13 +13,10 @@ export function addTwoNumbers(a: number, b: number): number {
  * @param creatorFn
  * @returns
  */
-export function collect<T>(
-    numElements: number,
-    creatorFn: (index: number) => T
-): T[] {
-    const results = [];
-    for (let i = 0; i < numElements; i++) {
-        results.push(creatorFn(i));
-    }
-    return results;
+export function collect<T>(numElements: number, creatorFn: (index: number) => T): T[] {
+  const results = [];
+  for (let i = 0; i < numElements; i++) {
+    results.push(creatorFn(i));
+  }
+  return results;
 }

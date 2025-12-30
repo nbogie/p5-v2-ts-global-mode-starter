@@ -1,21 +1,21 @@
 {
-    "name": "p5-v2-ts-global-mode-template",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "build:for-web-editors": "tsc && vite build --config vite.for-web-editors.config.js",
-        "test": "vitest",
-        "type-check": "tsc --noEmit",
-        "type-check:watch": "tsc --noEmit --watch",
-        "preview": "vite preview"
-    },
-    "devDependencies": {
-        "p5": "^2.1.1",
-        "typescript": "~5.9.3",
-        "vite": "^7.2.4",
-        "vitest": "^4.0.14"
-    }
+  "name": "p5-v2-ts-global-mode-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:for-web-editors": "tsc && vite build --config vite.for-web-editors.config.js",
+    "test": "vitest",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "p5": "^2.1.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vitest": "^4.0.14"
+  }
 }
