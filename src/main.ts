@@ -9,26 +9,26 @@ import p5 from "p5";
 p5.disableFriendlyErrors = false;
 
 window.setup = async function setup() {
-    createCanvas(windowWidth, windowHeight);
-    //just checking p5 variable is available (both to typescript and at runtime).
-    console.log(p5.Vector.random2D());
+  createCanvas(windowWidth, windowHeight);
+  //just checking p5 variable is available (both to typescript and at runtime).
+  console.log(p5.Vector.random2D());
 };
 
 window.draw = function draw() {
-    background(30);
-    drawSnowman();
+  background(30);
+  drawSnowman();
 };
 
 window.mousePressed = function mousePressed() {
-    console.log("Mouse Pressed!", mouseX, mouseY);
+  console.log("Mouse Pressed!", mouseX, mouseY);
 };
 
 window.keyPressed = function keyPressed() {
-    console.log("A key was pressed: ", key);
+  console.log("A key was pressed: ", key);
 };
 
 function drawSnowman() {
-    fill("white");
-    circle(mouseX, mouseY, 200);
-    circle(mouseX, mouseY - 100, 100);
+  fill("white");
+  circle(mouseX, mouseY, 200);
+  circle(mouseX, mouseY - 100, 100);
 }
