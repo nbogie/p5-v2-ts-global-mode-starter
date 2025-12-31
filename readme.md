@@ -14,18 +14,29 @@ npm i
 npm run dev
 ```
 
-## Type-checking
+## Type-checking on the command-line
 
 ```bash
 npm run type-check
 ```
 
-or if using vscode, in the editor use:
+This will type-check all TypeScript files under `src/` . This can be configured with the include property in `tsconfig.json`.
+
+Any errors will be reported to the standard output (likely your terminal).
+
+## Type-checking in VSCode
+
+If you are using VSCode, any open TypeScript files will be type-checked and any issues will:
+
+- be highlit with red squiggles, by default
+- added to the "problems" window - which you can view with `View: Problems`
+
+You can also type-check ALL project typescript files whether they are open or closed, using the keyboard shortcut:
 
 - `cmd-shift-b` (mac) or
 - `ctrl-shift-b` (windows)
 
-This will run the type-check across ALL project ts files and to populate vscode's problems window with any results. This is configured in `.vscode/tasks.json`.
+Again this will populate VSCode's problems window with any results. This behaviour is configured in `.VSCode/tasks.json` and behind the scenes it makes use of the `type-check` script declared in our `package.json`.
 
 ## Building
 
