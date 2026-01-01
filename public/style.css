@@ -13,3 +13,7 @@ nav {
   margin: 0.3rem;
   text-align: center;
 }
+
+canvas {
+  outline: hotpink dashed 10px;
+}
