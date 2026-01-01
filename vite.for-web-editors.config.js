@@ -40,7 +40,7 @@ export default defineConfig((_opts) => {
         external: ["p5", "p5/global"],
         preserveEntrySignatures: "strict",
         output: {
-          format: "iife",
+          format: "umd",
           globals: {
             p5: "p5",
           },
