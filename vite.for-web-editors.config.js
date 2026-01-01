@@ -11,7 +11,8 @@
 import { defineConfig } from "vite";
 import { resolve } from "path"; // Need this to resolve the file path
 export default defineConfig((_opts) => {
-  return {
+  /** @type {import('vite').UserConfig} */
+  const config = {
     //vite normally assumes the app is hosted out of /,
     //which messes with local testing from dist, for example.
     //We'll have it instead generate relative paths.
@@ -48,9 +49,10 @@ export default defineConfig((_opts) => {
           // preserveModules: true,
 
           // chunkFileNames: `[name].js`, //simplified names
-          // entryFileNames: `[name].js`,
+          // entryFileNames: `assets/[name].js`,
         },
       },
     },
   };
+  return config;
 });
