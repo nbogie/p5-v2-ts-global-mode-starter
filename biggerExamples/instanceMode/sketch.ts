@@ -15,14 +15,8 @@ function sketch(p: p5) {
   };
 
   p.draw = function draw(): void {
-    const myPositions = collect(20, () => randomPosition());
-    myPositions.forEach((pos: p5.Vector) => {
-      p.push();
-      p.translate(pos);
-      p.fill(p.random(palette));
-      p.circle(0, 0, p.random(10, 50));
-      p.pop();
-    });
+    const myPositions = collect(20, randomPosition);
+    myPositions.forEach(drawThingAtPos);
   };
 
   p.mousePressed = function mousePressed() {
@@ -34,6 +28,13 @@ function sketch(p: p5) {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
   };
 
+  function drawThingAtPos(pos: p5.Vector) {
+    p.push();
+    p.translate(pos);
+    p.fill(p.random(palette));
+    p.circle(0, 0, p.random(10, 50));
+    p.pop();
+  }
   function drawRandomCirclesNearMouse(numCircles: number) {
     p.noStroke();
     for (let i = 0; i < numCircles; i++) {
