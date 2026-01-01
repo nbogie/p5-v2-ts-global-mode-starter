@@ -1,6 +1,7 @@
 import "p5/global";
 //@ts-ignore
 import p5 from "p5";
+import { randomColour } from "./utils/palette.ts";
 
 window.setup = function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -9,5 +10,6 @@ window.setup = function setup() {
 
 window.draw = function draw() {
   const diameter: number = random(20, 100);
+  fill(randomColour());
   circle(mouseX, mouseY, diameter);
 };
