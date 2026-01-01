@@ -4,8 +4,6 @@
 // It is only intended for building into a single file, for deployment to
 // the p5 web editor, openprocessing, or similar.
 
-//WIP - not correct yet, regarding index.for-web-editors.html
-
 //reading:
 //configuring vite: https://vite.dev/config/
 //build options: https://vite.dev/config/build-options
@@ -14,6 +12,11 @@ import { defineConfig } from "vite";
 import { resolve } from "path"; // Need this to resolve the file path
 export default defineConfig((_opts) => {
   return {
+    //vite normally assumes the app is hosted out of /,
+    //which messes with local testing from dist, for example.
+    //We'll have it instead generate relative paths.
+    base: "./",
+
     build: {
       // Force CSS into a separate file
       cssCodeSplit: true,
