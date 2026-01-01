@@ -15,6 +15,8 @@ import { resolve } from "path"; // Need this to resolve the file path
 export default defineConfig((_opts) => {
   return {
     build: {
+      // Force CSS into a separate file
+      cssCodeSplit: true,
       //more readable code for upload on openprocessing etc
       minify: false,
       //Turn off the inclusion of the module preload polyfill at the top of the code.
@@ -31,10 +33,13 @@ export default defineConfig((_opts) => {
         // },
 
         //externalize deps that shouldn't be bundled - e.g. p5
-        external: ["p5"],
+        external: ["p5", "p5/global"],
         preserveEntrySignatures: "strict",
         output: {
-          format: "es",
+          format: "iife",
+          globals: {
+            p5: "p5",
+          },
 
           //if you don't want a consolidated single file output, enable preserveModules
           // preserveModules: true,
