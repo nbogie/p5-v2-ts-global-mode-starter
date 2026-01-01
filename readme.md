@@ -42,6 +42,10 @@ You can also type-check ALL project typescript files whether they are open or cl
 
 Again this will populate VSCode's problems window with any results. This behaviour is configured in `.VSCode/tasks.json` and behind the scenes it makes use of the `type-check` script declared in our `package.json`.
 
+## Setting visibility of dist/ and node_modules/ in vscode
+
+The file `.vscode/settings.json` controls whether or not the folders `node_modules` and `dist` are shown in vscode files panel. Edit these to your preference. When working on a custom build it can be useful to monitor what is being generated to dist/ but on the other hand, if these files are not hidden
+
 ## Building
 
 ```bash
