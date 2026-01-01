@@ -44,13 +44,17 @@ Again this will populate VSCode's problems window with any results. This behavio
 npm run build
 ```
 
-## Building readable JS (single file) - WIP
+This is the default build action that should be used by hosting services like netlify, vercel, github pages, etc.
+
+## Building a readable single-file JS for sharing on web editors
 
 ```bash
 npm run build:for-web-editors
 ```
 
-## optional: Running unit tests
+This will build into `dist/` a set of files including a single javascript file, the contents of which should be suitable for copying to the p5 web editor or openprocessing.
+
+## optional: Running unit tests (WIP)
 
 Note, these are not set up to test with p5 functions or values yet, so are of limited use.
 
@@ -68,12 +72,19 @@ To make another project like this one, it is easiest to run
 
 `npx degit nbogie/p5-v2-ts-global-mode-starter`
 
-Alternatively, just download the template as a zip and delete any files listed in degit.json
+Alternatively, just download the template as a zip and delete any files or directories listed in degit.json
 
 If you're using github, and want to create a new repo there, you can click on `use this template`. [More detail, if needed, is here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 ## Other p5 project starters
 
-Want a starter for p5 v1 ? v2? TS? JS with type-checking? Global mode ? Instance Mode?
+Do you want a starter project for:
+p5 v1.x ?
+v2.x?
+For TS?
+For JS with type-checking?
+For Global mode ?
+For Instance Mode?
 
+Most can be found at:
 https://github.com/nbogie/p5-beyond-the-web-editor-neill/blob/main/docs/starter-projects.md
