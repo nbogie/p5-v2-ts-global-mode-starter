@@ -1,5 +1,7 @@
 # p5 v2.x typescript project starter (global/instance mode)
 
+This is an opinionated starter project for coding p5.js v2.x sketches in TypeScript
+
 ## Install - do this before coding
 
 In the editor you will see typescript errors about p5 functions until this step is done:
@@ -7,6 +9,8 @@ In the editor you will see typescript errors about p5 functions until this step 
 ```bash
 npm i
 ```
+
+Also, if you haven't already, either install the recommended [prettier extension for code formatting](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), or delete the relevant `editor.defaultFormatter` line from `.vscode/settings.json`.
 
 ## Running the dev server
 
