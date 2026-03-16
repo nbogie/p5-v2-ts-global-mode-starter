@@ -16,9 +16,7 @@ window.draw = function draw() {
 
 //delete this
 function drawMyDesign() {
-  blendMode(SUBTRACT);
   background(0, 15);
-  blendMode(BLEND);
   const mouse = createVector(mouseX, mouseY);
   const pMouse = createVector(pmouseX, pmouseY);
   const towards = p5.Vector.sub(mouse, pMouse);
