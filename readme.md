@@ -1,4 +1,4 @@
-# p5 v2.x typescript project starter (global/instance mode)
+# p5 v2.x typescript project starter (global mode)
 
 This is an opinionated starter project for coding p5.js v2.x sketches in TypeScript
 

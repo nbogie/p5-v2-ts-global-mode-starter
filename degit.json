@@ -1,6 +1,6 @@
 [
   {
     "action": "remove",
-    "files": ["uncloned", "biggerExamples", "LICENSE", ".github"]
+    "files": ["uncloned", "LICENSE", ".github"]
   }
 ]
