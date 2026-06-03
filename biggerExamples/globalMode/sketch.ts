@@ -1,9 +1,5 @@
 //imports the types for global-mode p5.  AND side-effects to start p5 running (calls our setup() etc)
-import "p5/global";
-
-//This import is still necessary for the p5 variable to be available at runtime.
-//@ts-ignore We want to keep this here even if the sketch doesn't currently use the p5 variable.
-import p5 from "p5";
+import p5 from "p5/global";
 
 import { collect } from "./utils.ts";
 

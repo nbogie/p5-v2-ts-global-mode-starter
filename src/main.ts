@@ -1,6 +1,4 @@
-import "p5/global";
-//@ts-ignore
-import p5 from "p5";
+import p5 from "p5/global";
 import { randomColour } from "./utils/palette.ts";
 
 p5.disableFriendlyErrors = true;
