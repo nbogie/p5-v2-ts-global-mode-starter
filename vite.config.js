@@ -21,6 +21,8 @@ export default defineConfig((_opts) => {
           format: "umd",
           globals: {
             p5: "p5",
+            // p5/global resolves to the same runtime global as p5
+            "p5/global": "p5",
           },
         },
       },
